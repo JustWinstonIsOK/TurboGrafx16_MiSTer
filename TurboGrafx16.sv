@@ -212,8 +212,8 @@ video_freak video_freak
 (
 	.*,
 	.VGA_DE_IN(vga_de),
-	.ARX((!ar) ? (overscan ? 8'd4 : 8'd47) : (ar - 1'd1)),
-	.ARY((!ar) ? (overscan ? 8'd3 : 8'd37) : 12'd0),
+	.ARX((!ar) ? (overscan ? 8'd21 : 8'd141) : (ar - 1'd1)),
+	.ARY((!ar) ? (overscan ? 8'd5 : 8'd37) : 12'd0),
 	.CROP_SIZE((en216p & vcrop_en) ? 10'd216 : 10'd0),
 	.CROP_OFF(voff),
 	.SCALE(status[38:37])
